@@ -315,11 +315,14 @@ ax.set_title('User Rating Count by Movie Rating')
 ax.set_xlabel('User Rating Count by Rating Count')
 
 
-# In[168]:
+# In[310]:
 
 
-a = sns.FacetGrid( user_stat, hue='mean_int', aspect=4 )
-a.map(sns.kdeplot, 'size', shade= True )
-a.set(xlim=(0 , user_stat['size'].max()))
-a.add_legend()
+get_ipython().system('pip install fastFM')
+
+
+# In[ ]:
+
+
+
 
